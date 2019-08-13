@@ -6,8 +6,8 @@ const IndexPage = () => (
     <div className="Hero">
         <div className="HeroGroup">
           <h1>Hello 👋 I'm Pablo Bellver</h1>
-          <p>A thirty-three-year-old designer from Spain currently living in Alicante. I’m also the Lead Designer at LynxView, but I'm here growing my unicorn horn.</p>
-          <Link to="/page-2/">See showreal</Link>
+          <p>A thirty-three-year-old designer from Spain currently living in Alicante. I’m also Lead Designer at LynxView, but I'm here growing my unicorn horn.</p>
+          <Link to="/page-2/">See my works</Link>
         </div>
     </div>
   </div>
