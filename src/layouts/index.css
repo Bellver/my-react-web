@@ -17,7 +17,6 @@ a:hover {
 }
 
 .Hero {
-  background: url(../assets/images/heroHeader.jpg);
   height: 920px;
   background-size: cover;
   background-position: center;
@@ -32,7 +31,7 @@ a:hover {
 
 .Hero h1 {
   margin: 0;
-  color: white;
+  color: #212121;
   font-size: 4rem;
   line-height: 1.5;
 }
@@ -40,7 +39,7 @@ a:hover {
 .Hero p {
   font-size: 2rem;
   font-weight: 600px;
-  color: white;
+  color: #212121;
 }
 
 .Hero a {
@@ -67,6 +66,48 @@ a:hover {
   .Hero p {
     font-size: 24px;
   }
+}
+
+/** Work Pages **/
+WorkHeader {
+  height: 920px;
+  background-size: cover;
+  background-position: center;
+}
+
+.WorkHeaderGroup {
+  margin: 0 auto;
+  max-width: 720px;
+  padding: 300px 50px;
+  text-align: center;
+}
+
+.WorkHeaderGroup h1 {
+  margin: 0;
+  color: #212121;
+  font-size: 4rem;
+  line-height: 1.5;
+}
+
+/** About Page **/
+AboutHeader {
+  height: 920px;
+  background-size: cover;
+  background-position: center;
+}
+
+.AboutHeaderGroup {
+  margin: 0 auto;
+  max-width: 720px;
+  padding: 300px 50px;
+  text-align: center;
+}
+
+.AboutHeaderGroup h1 {
+  margin: 0;
+  color: #212121;
+  font-size: 4rem;
+  line-height: 1.5;
 }
 
 

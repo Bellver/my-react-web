@@ -6,7 +6,7 @@
 }
 
 .HeaderGroup {
-    max-width: 1280px;
+    max-width: 1440px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, auto);
@@ -15,8 +15,8 @@
 }
 
 .Header a {
-    color: white;
-    font-weight: 700px;
+    color: rgba(33, 33, 33, 0.6);
+    font-weight: 700;
 }
 
 .Header a:hover{
@@ -29,10 +29,10 @@
     }
 
     .HeaderGroup {
-        grid-template-columns: repeat(3, auto);
+        grid-template-columns: repeat(2, auto);
     }
 
-    Header a:nth-child(2){
+    .Header a:nth-child(1){
         display: none;
     } 
 }
