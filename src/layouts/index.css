@@ -7,13 +7,13 @@ body {
 }
 
 a {
-  color: red;
+  color: #212121;
   font-weight: 600;
   text-decoration: none;
 }
 
 a:hover {
-  color: blue;
+  color: black;
 }
 
 .Hero {
@@ -25,34 +25,52 @@ a:hover {
 .HeroGroup {
   margin: 0 auto;
   max-width: 720px;
-  padding: 300px 50px;
+  padding: 240px 50px;
   text-align: center;
 }
 
 .Hero h1 {
   margin: 0;
-  color: #212121;
+  color: black;
   font-size: 4rem;
   line-height: 1.5;
+  opacity: 0;
+  animation: HeroAnimation 3S 0.2 forwards cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .Hero p {
   font-size: 2rem;
   font-weight: 600px;
   color: #212121;
+  opacity: 0;
+  animation: HeroAnimation 3S 0.2 forwards cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .Hero a {
-  font-size: 1rem;
-  font-weight: 600;
   color: white;
-  text-transform: uppercase;
-  background: rgba(0, 0, 0, 0.6);
-  padding: 16px 24px;
-  border: 1px solid rgba(255, 2555, 255, 0.25);
-  border-radius: 32px;
+  font-weight: 600;
 }
 
+.Hero button {
+  color: whitesmoke;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 16px 24px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 32px;
+  cursor: pointer;
+  transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.Hero button:hover {
+  color: #212121;
+  background: rgb(255, 238, 0);
+  padding: 18px 26px;
+  box-shadow: 0 10px 20px rgba(255, 238, 33, 0.4);
+  transform: translateY(-8px);
+}
 
 @media (max-width: 640px) {
   .HeroGroup {
@@ -68,7 +86,24 @@ a:hover {
   }
 }
 
-/** Work Pages **/
+@keyframes HeroAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+
+
+
+
+
+
+/** Work Pages —————————————————————————————**/
 WorkHeader {
   height: 920px;
   background-size: cover;
@@ -89,7 +124,7 @@ WorkHeader {
   line-height: 1.5;
 }
 
-/** About Page **/
+/** About Page —————————————————————————————**/
 AboutHeader {
   height: 920px;
   background-size: cover;
